@@ -10,10 +10,8 @@
         @Html.HiddenFor(x => x.ProductID)
         @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
 
-
-        @*<input type="button" value="+ Add to Cart"/>
-        @Html.ActionLink("Add to Cart", "AddToCart","Cart", new {id="INPUT.actionButtons"})*@        
-        @Html.ActionLink("Add to Cart disp", "AddToCart", "Cart", new { productID = Model.ProductID, returnUrl = "Cart/Index"})
+       @* <input type="summit" value="+ Add to Cart"/>
+        @Html.ActionLink("Add to Cart", "AddToCart","Cart", new {id="INPUT.actionButtons"})*@      
     }
 
     <h4>@Model.Price.ToString("c")</h4>
